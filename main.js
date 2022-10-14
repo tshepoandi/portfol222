@@ -3,10 +3,36 @@
 let menu = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
 let menuItemToHighLight = []
+let contactButton = document.querySelector('.contact-button')
+let contactMessage = document.querySelector('.contactMessage')
+let yourMessage = document.querySelector('.yourMessage')
+let yourEmail = document.querySelector('.yourEmail')
+let yourName = document.querySelector('.yourName')
 
 menu.onclick = () => {
   menu.classList.toggle('fa-times')
   navbar.classList.toggle('active')
+}
+
+contactButton.onclick = () => {
+  console.log(yourEmail.value.length)
+  if (yourEmail.value.length == 0) {
+    contactMessage.innerHTML = 'Please enter your email address.'
+    return contactMessage.innerHTML
+  }
+  if (yourName.value.length == 0) {
+    contactMessage.innerHTML = 'Please enter your name.'
+    return contactMessage.innerHTML
+  }
+  if (yourMessage.value.length == 0) {
+    contactMessage.innerHTML = 'Please enter your message.'
+    return contactMessage.innerHTML
+  } else {
+    contactMessage.innerHTML = 'Message Sent!'
+  }
+  setTimeout(() => {
+    contactMessage.innerHTML = ''
+  }, 2000)
 }
 
 // navbar.onclick = () => {

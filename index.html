@@ -164,14 +164,26 @@
           <!--Contact Form-->
           <div class="contact-form">
             <form>
-              <input type="text" placeholder="Your name" />
-              <input type="email" placeholder="Enter your eMail" />
+              <input
+                type="text"
+                placeholder="Your name"
+                required
+                class="yourName"
+              />
+              <input
+                type="email"
+                placeholder="Enter your eMail"
+                class="yourEmail"
+              />
               <textarea
                 cols="30"
                 rows="10"
                 placeholder="Write your message here"
+                required
+                class="yourMessage"
               ></textarea>
               <input type="button" value="Send" class="contact-button" />
+              <p class="contactMessage"></p>
             </form>
           </div>
         </div>
