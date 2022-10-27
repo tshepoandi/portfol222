@@ -450,6 +450,15 @@ form textarea {
   }
 }
 
+.social-icon {
+  left: 50%;
+  width: 30px;
+  border-radius: 50%;
+}
+#social-icons {
+  padding-left: 42%;
+}
+
 /* @media (max-width: 760px) {
   #menu-icon {
     display: initial;
