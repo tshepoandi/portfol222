@@ -1,6 +1,6 @@
 /** @format */
 
-@import url('https//fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800');
+@import url("https//fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
   list-style: none;
   text-decoration: none;
   /* text-transform: capitalize; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@
 
   /* fonts */
   --h1-font: 2.2rem;
-  --h2-font: 1.5rem;
+  --h2-font: 2rem;
   --p-font: 1.3rem;
   --spacing: 1px;
 
